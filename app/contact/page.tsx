@@ -9,13 +9,29 @@ export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', budget: '', message: '' });
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    await new Promise(r => setTimeout(r, 1500));
-    setSent(true);
-    setSubmitting(false);
+    setError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError(data.error || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setError('Network error. Please try again or call us directly.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputStyle: React.CSSProperties = {
@@ -187,6 +203,11 @@ export default function ContactPage() {
                   />
                 </div>
 
+                {error && (
+                  <div style={{ background: 'rgba(208,28,42,0.1)', border: '1px solid rgba(208,28,42,0.3)', color: '#ff6b6b', padding: '12px 16px', fontSize: '13px', marginBottom: '16px', lineHeight: 1.5 }}>
+                    {error}
+                  </div>
+                )}
                 <button type="submit" disabled={submitting} className="btn-primary" style={{ width: '100%', border: 'none', cursor: submitting ? 'wait' : 'pointer', opacity: submitting ? 0.8 : 1 }}>
                   {submitting ? 'Sending...' : 'Send Message →'}
                 </button>
