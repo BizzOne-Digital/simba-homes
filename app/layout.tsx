@@ -13,7 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <Navbar />
-        <main style={{ paddingTop: '70px' }}>
+        {/* 36px topbar + 70px navbar = 106px total */}
+        <main style={{ paddingTop: '106px' }}>
           {children}
         </main>
         <Footer />
