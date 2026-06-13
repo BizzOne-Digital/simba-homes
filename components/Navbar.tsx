@@ -11,6 +11,7 @@ const links = [
   { href: '/services', label: 'Services' },
   { href: '/projects', label: 'Projects' },
   { href: '/warranty', label: 'Warranty' },
+  { href: '/permitting', label: 'Permitting' },
   { href: '/contact', label: 'Contact' },
 ];
 
