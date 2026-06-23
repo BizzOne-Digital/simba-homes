@@ -76,7 +76,7 @@ export default function PermittingPage() {
             </div>
           </div>
           <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden' }}>
-            <Image src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=80" alt="Permitting process" fill style={{ objectFit: 'cover' }} unoptimized />
+            <Image src="/per.jpeg" alt="Permitting process" fill style={{ objectFit: 'cover' }} unoptimized />
             <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.35)' }} />
           </div>
         </div>

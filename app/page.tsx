@@ -15,17 +15,16 @@ function useVisible(threshold = 0.15) {
 }
 
 const stats = [
-  { num: '100+', label: 'Homes Built' },
   { num: '4.9★', label: 'Google Rating' },
   { num: '2-5-10', label: 'Year Warranty' },
   { num: 'Metro\nVan', label: 'Cities Served' },
 ];
 
 const services = [
-  { title: 'Custom & Spec Homes', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80', href: '/services' },
-  { title: 'Laneway & Multiplex', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80', href: '/services' },
-  { title: 'Land Development', img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80', href: '/services' },
-  { title: 'Renovation & Additions', img: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80', href: '/services' },
+  { title: 'Custom & Spec Homes', img: '/img1.png', href: '/services' },
+  { title: 'Laneway & Multiplex', img: '/img2.jpeg', href: '/services' },
+  { title: 'Land Development', img: '/img3.png', href: '/services' },
+  { title: 'Renovation & Additions', img: '/img4.png', href: '/services' },
 ];
 
 const process = [
@@ -46,7 +45,7 @@ export default function HomePage() {
       {/* HERO */}
       <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0 }}>
-          <Image src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1600&q=85" alt="Luxury custom home BC" fill style={{ objectFit: 'cover', objectPosition: 'center' }} priority unoptimized />
+          <Image src="/hero.png" alt="Luxury custom home BC" fill style={{ objectFit: 'cover', objectPosition: 'center' }} priority unoptimized />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(30,37,51,0.97) 0%, rgba(30,37,51,0.88) 50%, rgba(30,37,51,0.55) 100%)' }} />
         </div>
         <div style={{ position: 'absolute', left: 0, top: '15%', bottom: '15%', width: '4px', background: '#D01C2A', zIndex: 2 }} />
@@ -55,7 +54,7 @@ export default function HomePage() {
           <div style={{ maxWidth: '700px', animation: 'fadeUp 0.9s ease 0.1s both' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
               <div style={{ width: '40px', height: '2px', background: '#D01C2A' }} />
-              <span className="section-label">Metro Vancouver · British Columbia</span>
+              <span className="section-label">Lower Mainland British Columbia · British Columbia</span>
             </div>
 
             <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '8px', color: '#fff', textTransform: 'uppercase', lineHeight: 1.05 }}>
@@ -69,7 +68,7 @@ export default function HomePage() {
             </h1>
 
             <p style={{ fontSize: '17px', color: '#CBD5E0', lineHeight: 1.8, maxWidth: '540px', marginBottom: '40px', fontWeight: 300 }}>
-              End-to-end custom home construction engineered with milestone-driven timelines and total budget transparency across Metro Vancouver — backed by WBI &amp; BC Housing 2-5-10 Warranty.
+              End-to-end custom home construction engineered with milestone-driven timelines and total budget transparency across Lower Mainland British Columbia — backed by WBI &amp; BC Housing 2-5-10 Warranty.
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '64px' }}>
@@ -152,7 +151,7 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             <div style={{ position: 'relative', opacity: s3.visible ? 1 : 0, transform: s3.visible ? 'none' : 'translateX(-30px)', transition: 'all 0.8s ease' }}>
               <div style={{ position: 'relative', aspectRatio: '4/5', overflow: 'hidden' }}>
-                <Image src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=80" alt="Simba Homes construction" fill style={{ objectFit: 'cover' }} unoptimized />
+                <Image src="/per.jpeg" alt="Simba Homes construction" fill style={{ objectFit: 'cover' }} unoptimized />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(208,28,42,0.15) 0%, transparent 60%)' }} />
               </div>
               <div style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#D01C2A', padding: '28px 32px', minWidth: '180px' }}>

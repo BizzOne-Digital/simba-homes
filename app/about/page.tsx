@@ -24,7 +24,7 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section style={{ position: 'relative', height: '420px', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
-        <Image src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="About Simba Homes" fill style={{ objectFit: 'cover' }} unoptimized />
+        <Image src="/hero.png" alt="About Simba Homes" fill style={{ objectFit: 'cover' }} unoptimized />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.88)' }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: '#D01C2A' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 48px', width: '100%' }}>
@@ -55,7 +55,7 @@ export default function AboutPage() {
               Our philosophy is simple: <strong style={{ color: '#CBD5E0' }}>No hidden costs, no cut corners, and no guesswork.</strong> Just a dedicated team working tirelessly to turn your blueprint into a home that lasts for generations.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-              {[['100+', 'Homes Completed'], ['4.9★', 'Google Rating'], ['2-5-10', 'Year Warranty'], ['Metro Van', 'Service Area']].map(([n, l]) => (
+              {[ ['4.9★', 'Google Rating'], ['2-5-10', 'Year Warranty'], ['Metro Van', 'Service Area']].map(([n, l]) => (
                 <div key={l} style={{ padding: '20px', background: '#252D3D', borderLeft: '3px solid #D01C2A' }}>
                   <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '26px', fontWeight: 800, color: '#D01C2A' }}>{n}</div>
                   <div style={{ fontSize: '11px', color: '#718096', letterSpacing: '0.08em', textTransform: 'uppercase', marginTop: '4px', fontFamily: 'Barlow Condensed, sans-serif' }}>{l}</div>
@@ -65,7 +65,7 @@ export default function AboutPage() {
           </div>
           <div style={{ position: 'relative' }}>
             <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
-              <Image src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80" alt="Custom home by Simba Homes" fill style={{ objectFit: 'cover' }} unoptimized />
+              <Image src="/img1.png" alt="Custom home by Simba Homes" fill style={{ objectFit: 'cover' }} unoptimized />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(208,28,42,0.1) 0%, transparent 50%)' }} />
             </div>
             <div style={{ position: 'absolute', bottom: '-20px', left: '-20px', background: '#D01C2A', padding: '20px 28px' }}>

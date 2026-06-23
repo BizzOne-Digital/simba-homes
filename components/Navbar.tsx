@@ -121,52 +121,55 @@ export default function Navbar() {
           transition: 'all 0.3s ease',
         }}
       >
-        {/* Logo */}
-        <Link
-          href="/"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '10px',
-            textDecoration: 'none',
-          }}
-        >
-          <Image
-            src="/logo1.png"
-            alt="Simba Homes Ltd"
-            width={52}
-            height={52}
-            style={{ objectFit: 'contain' }}
-          />
+       {/* Logo */}
+<Link
+  href="/"
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "14px",
+    textDecoration: "none",
+  }}
+>
+  <Image
+    src="/logo1.png"
+    alt="Simba Homes Ltd"
+    width={72}
+    height={72}
+    style={{ objectFit: "contain" }}
+  />
 
-          <div style={{ lineHeight: 1.1 }}>
-            <div
-              style={{
-                fontFamily: 'Barlow Condensed, sans-serif',
-                fontWeight: 800,
-                fontSize: '20px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase',
-                color: '#1E2533',
-              }}
-            >
-              SIMBA HOMES
-            </div>
+  <div style={{ lineHeight: 1.1 }}>
+    <div
+      style={{
+        fontFamily: "Barlow Condensed, sans-serif",
+        fontWeight: 800,
+        fontSize: "24px",
+        letterSpacing: "0.05em",
+        textTransform: "uppercase",
+        color: "#1E2533",
+      }}
+    >
+      SIMBA HOMES
+    </div>
 
-            <div
-              style={{
-                fontFamily: 'Barlow Condensed, sans-serif',
-                fontSize: '11px',
-                letterSpacing: '0.25em',
-                color: '#D01C2A',
-                textTransform: 'uppercase',
-                fontWeight: 600,
-              }}
-            >
-              LTD · BC CANADA
-            </div>
-          </div>
-        </Link>
+    <div
+      style={{
+        fontFamily: "Barlow Condensed, sans-serif",
+        fontSize: "12px",
+        letterSpacing: "0.25em",
+        color: "#D01C2A",
+        textTransform: "uppercase",
+        fontWeight: 600,
+        textAlign: "center",
+        width: "100%",
+        display: "block",
+      }}
+    >
+      LTD
+    </div>
+  </div>
+</Link>
 
         {/* Desktop Navigation */}
         <div

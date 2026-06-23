@@ -10,42 +10,42 @@ const services = [
     short: 'Tailored homes engineered to your vision — or premium spec homes ready for immediate possession.',
     desc: 'Whether you have a specific vision for your dream home or are looking for a move-in-ready spec home, Simba Homes delivers exceptional results. Our custom homes are designed around your lifestyle, budget, and preferences with milestone-driven timelines and no surprise change orders.',
     features: ['Fully custom floor plans', 'Premium finish packages', 'Energy Step Code compliance', 'Milestone-driven scheduling', 'Permit & inspection management', 'Move-in ready spec options'],
-    img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    img: '/img1.png',
   },
   {
     num: '02', title: 'Laneway Homes & Backyard Studios',
     short: 'Maximize your lot with a laneway home or backyard studio — rental income or multi-generational living.',
-    desc: 'Laneway homes and backyard studios are one of the fastest-growing housing solutions in Metro Vancouver. We manage the full process — from zoning audit and design to permit approval and construction — so you can start earning rental income or housing family without the headache.',
+    desc: 'Laneway homes and backyard studios are one of the fastest-growing housing solutions in Lower Mainland British Columbia. We manage the full process — from zoning audit and design to permit approval and construction — so you can start earning rental income or housing family without the headache.',
     features: ['Zoning & feasibility audit', 'BC multiplex regulation compliance', 'Laneway home design & build', 'Backyard studio construction', 'Rental income optimization', 'Full permit management'],
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    img: '/img2.jpeg',
   },
   {
     num: '03', title: 'Multiplexes & Home Additions',
     short: 'Capitalize on BC\'s new multiplex regulations — we build duplexes, triplexes, and fourplexes across Metro Van.',
     desc: 'With BC\'s new multiplex zoning rules allowing up to 4 units on most single-family lots, now is the time to maximize your property\'s value. We specialize in multiplex design and construction that meets municipal requirements while maximizing unit count and rental yield.',
     features: ['Duplex, triplex & fourplex builds', 'BC multiplex zoning compliance', 'Home addition design & permits', 'Secondary suite integration', 'Density maximization strategy', 'Rental income planning'],
-    img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    img: 'ser.jpeg',
   },
   {
     num: '04', title: 'Land Development & Subdivision',
     short: 'Transforming raw land into shovel-ready serviced lots — feasibility to final approval handled.',
     desc: 'Our land development team handles the full lifecycle of transforming raw parcels into buildable, serviced lots. From initial site analysis and feasibility studies to municipal approvals and infrastructure installation, we maximize your land\'s potential while navigating BC\'s complex regulatory environment.',
     features: ['Site analysis & feasibility', 'Environmental assessments', 'Subdivision & strata creation', 'BC Land Title coordination', 'Utility installation', 'Municipal plan approvals'],
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    img: '/img3.png',
   },
   {
     num: '05', title: 'Renovation & Remodels',
     short: 'Breathe new life into your home — kitchens, bathrooms, full-home renovations and structural additions.',
     desc: 'Our renovation team transforms tired spaces into stunning, functional homes. From complete gut renovations to targeted kitchen and bathroom remodels, we blend quality workmanship with modern design. All renovation work is permit-managed and code-compliant from day one.',
     features: ['Kitchen & bathroom remodels', 'Full home renovations', 'Structural additions', 'Heritage home restoration', 'Permit management', 'Energy-efficient upgrades'],
-    img: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=800&q=80',
+    img: '/ser.png',
   },
   {
     num: '06', title: 'Design & Permitting',
     short: 'We speak "City Hall" so you don\'t have to — full design, permitting, and zoning services.',
     desc: 'One of the biggest risks in custom home building is Permitting Limbo — where projects stall for months due to paperwork errors or zoning misunderstandings. At Simba Homes, we treat permitting as a dedicated phase. We prepare meticulous application packages that anticipate the city\'s questions before they ask them.',
     features: ['Pre-design zoning audit', 'BC Building Code compliance', 'Energy Step Code modeling', 'City Hall liaison & submission', 'Variance negotiation', 'Fast-track permit strategy'],
-    img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+    img: '/per.jpeg',
   },
 ];
 
@@ -61,7 +61,7 @@ export default function ServicesPage() {
           <div className="section-label" style={{ marginBottom: '12px' }}>What We Build</div>
           <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', color: '#fff' }}>OUR SERVICES</h1>
           <p style={{ color: '#718096', fontSize: '16px', marginTop: '12px', maxWidth: '560px' }}>
-            From custom homes and laneway suites to multiplexes and full land development — specialized residential construction across Metro Vancouver.
+            From custom homes and laneway suites to multiplexes and full land development — specialized residential construction across Lower Mainland British Columbia.
           </p>
           <div style={{ display: 'flex', gap: '8px', marginTop: '16px' }}>
             <Link href="/" style={{ fontSize: '13px', color: '#718096' }}>Home</Link>

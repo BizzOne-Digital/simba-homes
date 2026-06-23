@@ -14,11 +14,11 @@ export default function Footer() {
               <Image src="/logo1.png" alt="Simba Homes" width={60} height={60} style={{ objectFit: 'contain' }} />
               <div>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '18px', fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#fff' }}>SIMBA HOMES LTD</div>
-                <div style={{ fontSize: '10px', color: '#D01C2A', letterSpacing: '0.2em', fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600 }}>METRO VANCOUVER · BC CANADA</div>
+                <div style={{ fontSize: '10px', color: '#D01C2A', letterSpacing: '0.2em', fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600 }}>Lower Mainland British Columbia · BC CANADA</div>
               </div>
             </div>
             <p style={{ fontSize: '14px', color: '#718096', lineHeight: 1.7, maxWidth: '280px', marginBottom: '28px' }}>
-              End-to-end custom home construction engineered with milestone-driven timelines and total budget transparency across Metro Vancouver.
+              End-to-end custom home construction engineered with milestone-driven timelines and total budget transparency across Lower Mainland British Columbia.
             </p>
 
             {/* Warranty logos block */}
@@ -79,7 +79,7 @@ export default function Footer() {
               {[
                 { icon: <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>, href: 'tel:+17787077325', text: '+1 778 707 7325' },
                 { icon: <><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></>, href: 'mailto:info@simbahomes.ca', text: 'info@simbahomes.ca' },
-                { icon: <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></>, href: '#', text: 'Metro Vancouver, BC' },
+                { icon: <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></>, href: '#', text: 'Lower Mainland British Columbia, BC' },
               ].map((c, i) => (
                 <a key={i} href={c.href} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', color: '#CBD5E0', textDecoration: 'none', fontSize: '14px' }}>
                   <svg style={{ marginTop: '2px', flexShrink: 0 }} width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D01C2A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">{c.icon}</svg>
