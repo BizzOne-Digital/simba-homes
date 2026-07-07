@@ -77,7 +77,7 @@ export default function HomePage() {
             </div>
 
             {/* Stats */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '32px' }}>
+            <div className="grid-4" style={{ display: 'grid', gap: '0', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '32px' }}>
               {stats.map((s, i) => (
                 <div key={i} style={{ paddingRight: '24px', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.1)' : 'none', paddingLeft: i > 0 ? '24px' : '0' }}>
                   <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '28px', fontWeight: 800, color: '#D01C2A', lineHeight: 1, whiteSpace: 'pre-line' }}>{s.num}</div>
@@ -107,7 +107,7 @@ export default function HomePage() {
               <svg width="16" height="10" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4" stroke="#D01C2A" strokeWidth="1.5" fill="none" strokeLinecap="round"/></svg>
             </Link>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2px', opacity: s1.visible ? 1 : 0, transition: 'opacity 0.7s ease 0.2s' }}>
+          <div className="grid-4" style={{ display: 'grid', gap: '2px', opacity: s1.visible ? 1 : 0, transition: 'opacity 0.7s ease 0.2s' }}>
             {services.map((s, i) => (
               <Link key={i} href={s.href} style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden', display: 'block' }}>
                 <Image src={s.img} alt={s.title} fill style={{ objectFit: 'cover' }} unoptimized />
@@ -132,7 +132,7 @@ export default function HomePage() {
               We don't just submit plans and hope for the best — we manage the permitting process proactively so your build starts on time, every time.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2px', opacity: s2.visible ? 1 : 0, transition: 'opacity 0.7s ease 0.3s' }}>
+          <div className="grid-4" style={{ display: 'grid', gap: '2px', opacity: s2.visible ? 1 : 0, transition: 'opacity 0.7s ease 0.3s' }}>
             {process.map((p, i) => (
               <div key={i} style={{ background: '#252D3D', padding: '36px 28px', borderTop: '3px solid #D01C2A', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '72px', fontWeight: 800, color: 'rgba(208,28,42,0.06)', position: 'absolute', top: '-8px', right: '8px', lineHeight: 1 }}>{p.num}</div>
@@ -146,15 +146,15 @@ export default function HomePage() {
       </section>
 
       {/* WHY SIMBA */}
-      <section ref={s3.ref} style={{ background: '#252D3D', padding: '100px 48px' }}>
+      <section ref={s3.ref} style={{ background: '#252D3D', padding: '100px 48px', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
-            <div style={{ position: 'relative', opacity: s3.visible ? 1 : 0, transform: s3.visible ? 'none' : 'translateX(-30px)', transition: 'all 0.8s ease' }}>
+          <div className="grid-2" style={{ display: 'grid', gap: '80px', alignItems: 'center' }}>
+            <div style={{ position: 'relative', opacity: s3.visible ? 1 : 0, transform: s3.visible ? 'none' : 'translateX(-30px)', transition: 'all 0.8s ease', maxWidth: '100%' }}>
               <div style={{ position: 'relative', aspectRatio: '4/5', overflow: 'hidden' }}>
                 <Image src="/per.jpeg" alt="Simba Homes construction" fill style={{ objectFit: 'cover' }} unoptimized />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(208,28,42,0.15) 0%, transparent 60%)' }} />
               </div>
-              <div style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#D01C2A', padding: '28px 32px', minWidth: '180px' }}>
+              <div className="review-badge" style={{ position: 'absolute', bottom: '-24px', right: '-24px', background: '#D01C2A', padding: '28px 32px', minWidth: '180px' }}>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '14px', fontWeight: 700, letterSpacing: '0.1em', color: '#fff', lineHeight: 1.5, textTransform: 'uppercase' }}>See Our<br />Google Reviews</div>
                 <div style={{ fontSize: '24px', marginTop: '6px' }}>★★★★★</div>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '11px', color: 'rgba(255,255,255,0.7)', marginTop: '2px' }}>4.9 / 5.0 Rating</div>
@@ -210,13 +210,16 @@ export default function HomePage() {
       </section>
 
       <style>{`
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        .grid-2 { grid-template-columns: 1fr 1fr; }
         @media (max-width: 900px) {
-          section > div > div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
-          section > div > div[style*="repeat(4, 1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
+          .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+          .grid-2 { grid-template-columns: 1fr !important; gap: 48px !important; }
         }
         @media (max-width: 600px) {
           section { padding-left: 20px !important; padding-right: 20px !important; }
-          section > div > div[style*="repeat(4, 1fr)"] { grid-template-columns: 1fr !important; }
+          .grid-4 { grid-template-columns: 1fr !important; }
+          .review-badge { position: static !important; margin-top: 16px !important; width: 100% !important; box-sizing: border-box !important; }
         }
         @keyframes fadeUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
