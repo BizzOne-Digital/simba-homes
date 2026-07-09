@@ -17,7 +17,7 @@ function useVisible(threshold = 0.15) {
 const stats = [
   { num: '4.9★', label: 'Google Rating' },
   { num: '2-5-10', label: 'Year Warranty' },
-  { num: 'Metro\nVan', label: 'Cities Served' },
+  { num: 'BC', label: 'Lower Mainland' },
 ];
 
 const services = [
@@ -50,7 +50,7 @@ export default function HomePage() {
         </div>
         <div style={{ position: 'absolute', left: 0, top: '15%', bottom: '15%', width: '4px', background: '#D01C2A', zIndex: 2 }} />
 
-        <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 48px', width: '100%' }}>
+        <div style={{ position: 'relative', zIndex: 2, width: '100%', padding: '0 48px 0 64px' }}>
           <div style={{ maxWidth: '700px', animation: 'fadeUp 0.9s ease 0.1s both' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
               <div style={{ width: '40px', height: '2px', background: '#D01C2A' }} />
@@ -60,11 +60,8 @@ export default function HomePage() {
             <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '8px', color: '#fff', textTransform: 'uppercase', lineHeight: 1.05 }}>
               WE DON'T JUST
             </h1>
-            <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '8px', color: '#D01C2A', textTransform: 'uppercase', lineHeight: 1.05 }}>
+            <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '28px', color: '#D01C2A', textTransform: 'uppercase', lineHeight: 1.05 }}>
               BUILD HOMES.
-            </h1>
-            <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '28px', color: '#fff', textTransform: 'uppercase', lineHeight: 1.05, fontStyle: 'italic' }}>
-              We Engineer Legacies.
             </h1>
 
             <p style={{ fontSize: '17px', color: '#CBD5E0', lineHeight: 1.8, maxWidth: '540px', marginBottom: '40px', fontWeight: 300 }}>

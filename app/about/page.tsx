@@ -55,7 +55,7 @@ export default function AboutPage() {
               Our philosophy is simple: <strong style={{ color: '#CBD5E0' }}>No hidden costs, no cut corners, and no guesswork.</strong> Just a dedicated team working tirelessly to turn your blueprint into a home that lasts for generations.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-              {[ ['4.9★', 'Google Rating'], ['2-5-10', 'Year Warranty'], ['Metro Van', 'Service Area']].map(([n, l]) => (
+              {[ ['4.9★', 'Google Rating'], ['2-5-10', 'Year Warranty'], ['Lower Mainland', 'Service Area']].map(([n, l]) => (
                 <div key={l} style={{ padding: '20px', background: '#252D3D', borderLeft: '3px solid #D01C2A' }}>
                   <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '26px', fontWeight: 800, color: '#D01C2A' }}>{n}</div>
                   <div style={{ fontSize: '11px', color: '#718096', letterSpacing: '0.08em', textTransform: 'uppercase', marginTop: '4px', fontFamily: 'Barlow Condensed, sans-serif' }}>{l}</div>

@@ -21,7 +21,7 @@ const services = [
   },
   {
     num: '03', title: 'Multiplexes & Home Additions',
-    short: 'Capitalize on BC\'s new multiplex regulations — we build duplexes, triplexes, and fourplexes across Metro Van.',
+    short: 'Capitalize on BC\'s new multiplex regulations — we build duplexes, triplexes, and fourplexes across Lower Mainland British Columbia.',
     desc: 'With BC\'s new multiplex zoning rules allowing up to 4 units on most single-family lots, now is the time to maximize your property\'s value. We specialize in multiplex design and construction that meets municipal requirements while maximizing unit count and rental yield.',
     features: ['Duplex, triplex & fourplex builds', 'BC multiplex zoning compliance', 'Home addition design & permits', 'Secondary suite integration', 'Density maximization strategy', 'Rental income planning'],
     img: 'ser.jpeg',
@@ -38,7 +38,7 @@ const services = [
     short: 'Breathe new life into your home — kitchens, bathrooms, full-home renovations and structural additions.',
     desc: 'Our renovation team transforms tired spaces into stunning, functional homes. From complete gut renovations to targeted kitchen and bathroom remodels, we blend quality workmanship with modern design. All renovation work is permit-managed and code-compliant from day one.',
     features: ['Kitchen & bathroom remodels', 'Full home renovations', 'Structural additions', 'Heritage home restoration', 'Permit management', 'Energy-efficient upgrades'],
-    img: '/ser.png',
+    img: '/img4.png',
   },
   {
     num: '06', title: 'Design & Permitting',
