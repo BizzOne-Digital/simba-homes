@@ -23,14 +23,12 @@ export default function Footer() {
               <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4A5568', marginBottom: '12px' }}>Warranty Protected By</div>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
                 {/* WBI Logo badge */}
-                <div style={{ background: '#D01C2A', padding: '8px 14px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '18px', fontWeight: 800, color: '#fff', lineHeight: 1, letterSpacing: '0.05em' }}>WBI</div>
-                  <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '7px', color: 'rgba(255,255,255,0.8)', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: '1px' }}>HOME WARRANTY</div>
+                <div style={{ background: '#fff', padding: '8px 14px', display: 'flex', alignItems: 'center' }}>
+                  <Image src="/wbihomewarranty.png" alt="WBI Home Warranty" width={130} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} unoptimized />
                 </div>
                 {/* BC Housing Logo badge */}
-                <div style={{ background: '#2F3A52', border: '1px solid rgba(255,255,255,0.15)', padding: '8px 14px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '14px', fontWeight: 800, color: '#fff', lineHeight: 1, letterSpacing: '0.05em' }}>BC HOUSING</div>
-                  <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '7px', color: 'rgba(255,255,255,0.6)', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: '1px' }}>REGISTERED BUILDER</div>
+                <div style={{ background: '#fff', padding: '8px 14px', display: 'flex', alignItems: 'center' }}>
+                  <Image src="/bchousing.png" alt="BC Housing Registered Builder" width={130} height={40} style={{ objectFit: 'contain', height: '28px', width: 'auto' }} unoptimized />
                 </div>
                 {/* 2-5-10 badge */}
                 <div style={{ background: '#1E2533', border: '1px solid rgba(208,28,42,0.4)', padding: '8px 14px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
