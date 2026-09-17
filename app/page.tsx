@@ -142,6 +142,38 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CURRENT OFFERS */}
+      <section style={{ background: '#252D3D', padding: '100px 48px', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <div className="section-label" style={{ marginBottom: '12px' }}>Current Offers</div>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px' }}>LIMITED-TIME OFFERS</h2>
+            <p style={{ color: '#718096', fontSize: '15px', maxWidth: '560px', margin: '0 auto', lineHeight: 1.7 }}>
+              Take advantage of our current promotions — get in touch before they end.
+            </p>
+          </div>
+          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+            {[
+              { img: '/promo-zoning-report.jpeg', alt: 'Free Property Zoning Report' },
+              { img: '/promo-permit-completion.jpeg', alt: 'Guiding You From Permit to Completion' },
+            ].map((o, i) => (
+              <Link
+                key={i}
+                href="/contact"
+                style={{ display: 'block', borderRadius: '10px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', position: 'relative', aspectRatio: '3 / 4' }}
+              >
+                <Image src={o.img} alt={o.alt} fill style={{ objectFit: 'cover' }} unoptimized />
+              </Link>
+            ))}
+          </div>
+        </div>
+        <style jsx>{`
+          @media (max-width: 700px) {
+            .grid-2 { grid-template-columns: 1fr !important; }
+          }
+        `}</style>
+      </section>
+
       {/* WHY SIMBA */}
       <section ref={s3.ref} style={{ background: '#252D3D', padding: '100px 48px', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
