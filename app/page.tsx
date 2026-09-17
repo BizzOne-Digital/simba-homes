@@ -152,23 +152,30 @@ export default function HomePage() {
               Take advantage of our current promotions — get in touch before they end.
             </p>
           </div>
-          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', margin: '0 auto' }}>
             {[
               { img: '/promo-zoning-report.jpeg', alt: 'Free Property Zoning Report' },
               { img: '/promo-permit-completion.jpeg', alt: 'Guiding You From Permit to Completion' },
+              { img: '/promo-building-better-spaces.jpeg', alt: 'Building Better Spaces' },
+              { img: '/promo-foundation-pour.jpeg', alt: 'Let a Licensed Builder Pour Your Foundation' },
+              { img: '/promo-dream-home-bc.jpeg', alt: 'Your Dream Home in BC' },
+              { img: '/promo-ideal-living-space.jpeg', alt: 'Creating Your Ideal Living Space' },
             ].map((o, i) => (
               <Link
                 key={i}
                 href="/contact"
-                style={{ display: 'block', borderRadius: '10px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', position: 'relative', aspectRatio: '3 / 4' }}
+                style={{ display: 'block', borderRadius: '10px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', position: 'relative', aspectRatio: '3 / 4', background: '#fff' }}
               >
-                <Image src={o.img} alt={o.alt} fill style={{ objectFit: 'cover' }} unoptimized />
+                <Image src={o.img} alt={o.alt} fill style={{ objectFit: 'contain' }} unoptimized />
               </Link>
             ))}
           </div>
         </div>
         <style jsx>{`
-          @media (max-width: 700px) {
+          @media (max-width: 900px) {
+            .grid-2 { grid-template-columns: 1fr 1fr !important; }
+          }
+          @media (max-width: 560px) {
             .grid-2 { grid-template-columns: 1fr !important; }
           }
         `}</style>
