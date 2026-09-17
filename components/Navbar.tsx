@@ -115,9 +115,9 @@ export default function Navbar() {
   <Image
     src="/logo1.png"
     alt="Simba Homes Ltd"
-    width={200}
-    height={58}
-    style={{ objectFit: "contain", width: "auto", height: "58px" }}
+    width={439}
+    height={252}
+    style={{ objectFit: "contain", width: "auto", height: "64px" }}
   />
 </Link>
 
