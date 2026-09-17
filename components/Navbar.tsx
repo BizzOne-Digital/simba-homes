@@ -89,7 +89,7 @@ export default function Navbar() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          height: '110px',
+          height: '70px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -115,9 +115,9 @@ export default function Navbar() {
   <Image
     src="/logo1.png"
     alt="Simba Homes Ltd"
-    width={92}
-    height={92}
-    style={{ objectFit: "contain" }}
+    width={200}
+    height={58}
+    style={{ objectFit: "contain", width: "auto", height: "58px" }}
   />
 </Link>
 
@@ -231,7 +231,7 @@ export default function Navbar() {
           style={{
             position: 'fixed',
             inset: 0,
-            top: '146px',
+            top: '106px',
             background: '#ffffff',
             zIndex: 999,
             display: 'flex',
