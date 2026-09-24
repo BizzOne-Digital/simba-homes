@@ -25,7 +25,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section style={{ position: 'relative', height: '420px', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
         <Image src="/hero.png" alt="About Simba Homes" fill style={{ objectFit: 'cover' }} unoptimized />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.88)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.72)' }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: '#D01C2A' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 48px', width: '100%' }}>
           <div className="section-label" style={{ marginBottom: '12px' }}>Who We Are</div>
@@ -39,26 +39,26 @@ export default function AboutPage() {
       </section>
 
       {/* Main story — Option 1 (Building Your Future) */}
-      <section style={{ background: '#1E2533', padding: '96px 48px' }}>
+      <section style={{ background: '#FFFFFF', padding: '96px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
           <div>
             <div className="section-label" style={{ marginBottom: '12px' }}>Our Story</div>
-            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#fff', marginBottom: '8px' }}>BUILDING YOUR FUTURE,</h2>
+            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#1E2533', marginBottom: '8px' }}>BUILDING YOUR FUTURE,</h2>
             <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#D01C2A', marginBottom: '24px', fontStyle: 'italic' }}>SANS THE STRESS.</h2>
-            <p style={{ fontSize: '15px', color: '#CBD5E0', lineHeight: 1.8, marginBottom: '20px' }}>
+            <p style={{ fontSize: '15px', color: '#1E2533', lineHeight: 1.8, marginBottom: '20px' }}>
               At Simba Homes, we believe that building a custom home in British Columbia should be an exciting journey, not a source of anxiety. Founded on the principles of transparency and precision, we bridge the gap between your dream design and the technical realities of construction.
             </p>
-            <p style={{ fontSize: '15px', color: '#718096', lineHeight: 1.8, marginBottom: '20px' }}>
+            <p style={{ fontSize: '15px', color: '#4A5568', lineHeight: 1.8, marginBottom: '20px' }}>
               We know that BC's zoning laws are complex and the climate is demanding. That's why we don't just build — we advocate for you. From navigating municipal permits to selecting energy-efficient materials that withstand the West Coast weather, we handle the heavy lifting.
             </p>
-            <p style={{ fontSize: '15px', color: '#718096', lineHeight: 1.8, marginBottom: '32px' }}>
-              Our philosophy is simple: <strong style={{ color: '#CBD5E0' }}>No hidden costs, no cut corners, and no guesswork.</strong> Just a dedicated team working tirelessly to turn your blueprint into a home that lasts for generations.
+            <p style={{ fontSize: '15px', color: '#4A5568', lineHeight: 1.8, marginBottom: '32px' }}>
+              Our philosophy is simple: <strong style={{ color: '#1E2533' }}>No hidden costs, no cut corners, and no guesswork.</strong> Just a dedicated team working tirelessly to turn your blueprint into a home that lasts for generations.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
               {[ ['4.9★', 'Google Rating'], ['2-5-10', 'Year Warranty'], ['Lower Mainland', 'Service Area']].map(([n, l]) => (
-                <div key={l} style={{ padding: '20px', background: '#252D3D', borderLeft: '3px solid #D01C2A' }}>
+                <div key={l} style={{ padding: '20px', background: '#F4F6F9', borderLeft: '3px solid #D01C2A' }}>
                   <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '26px', fontWeight: 800, color: '#D01C2A' }}>{n}</div>
-                  <div style={{ fontSize: '11px', color: '#718096', letterSpacing: '0.08em', textTransform: 'uppercase', marginTop: '4px', fontFamily: 'Barlow Condensed, sans-serif' }}>{l}</div>
+                  <div style={{ fontSize: '11px', color: '#4A5568', letterSpacing: '0.08em', textTransform: 'uppercase', marginTop: '4px', fontFamily: 'Barlow Condensed, sans-serif' }}>{l}</div>
                 </div>
               ))}
             </div>
@@ -76,20 +76,20 @@ export default function AboutPage() {
       </section>
 
       {/* SIMBA Acronym Values */}
-      <section style={{ background: '#252D3D', padding: '96px 48px' }}>
+      <section style={{ background: '#F4F6F9', padding: '96px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
             <div className="section-label" style={{ marginBottom: '12px' }}>What We Stand For</div>
-            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#fff', marginBottom: '12px' }}>THE SIMBA STANDARD</h2>
-            <p style={{ color: '#718096', fontSize: '15px', maxWidth: '480px', margin: '0 auto' }}>Five principles that guide every decision we make — from the first permit to the final coat of paint.</p>
+            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#1E2533', marginBottom: '12px' }}>THE SIMBA STANDARD</h2>
+            <p style={{ color: '#4A5568', fontSize: '15px', maxWidth: '480px', margin: '0 auto' }}>Five principles that guide every decision we make — from the first permit to the final coat of paint.</p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
             {simbaValues.map((v, i) => (
-              <div key={i} style={{ background: '#1E2533', padding: '28px 40px', display: 'flex', alignItems: 'center', gap: '32px', borderLeft: '4px solid #D01C2A' }}>
+              <div key={i} style={{ background: '#FFFFFF', padding: '28px 40px', display: 'flex', alignItems: 'center', gap: '32px', borderLeft: '4px solid #D01C2A' }}>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '56px', fontWeight: 800, color: '#D01C2A', lineHeight: 1, minWidth: '48px' }}>{v.letter}</div>
                 <div>
-                  <h3 style={{ fontSize: '20px', color: '#fff', marginBottom: '6px' }}>{v.title}</h3>
-                  <p style={{ fontSize: '14px', color: '#718096', lineHeight: 1.6 }}>{v.desc}</p>
+                  <h3 style={{ fontSize: '20px', color: '#1E2533', marginBottom: '6px' }}>{v.title}</h3>
+                  <p style={{ fontSize: '14px', color: '#4A5568', lineHeight: 1.6 }}>{v.desc}</p>
                 </div>
               </div>
             ))}
@@ -98,22 +98,22 @@ export default function AboutPage() {
       </section>
 
       {/* Our Process */}
-      <section style={{ background: '#1E2533', padding: '96px 48px' }}>
+      <section style={{ background: '#FFFFFF', padding: '96px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '56px' }}>
             <div className="section-label" style={{ marginBottom: '12px' }}>How We Work</div>
-            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#fff', marginBottom: '12px' }}>FROM RED TAPE TO GREEN LIGHT</h2>
-            <p style={{ color: '#718096', fontSize: '15px', maxWidth: '600px', lineHeight: 1.7 }}>
+            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#1E2533', marginBottom: '12px' }}>FROM RED TAPE TO GREEN LIGHT</h2>
+            <p style={{ color: '#4A5568', fontSize: '15px', maxWidth: '600px', lineHeight: 1.7 }}>
               At Simba Homes, we know that waiting for city approval is the hardest part of the build. That's why we don't just submit plans and hope for the best — we manage the process proactively.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2px' }}>
             {process.map((p, i) => (
-              <div key={i} style={{ background: '#252D3D', padding: '36px 28px', borderTop: '3px solid #D01C2A', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '72px', fontWeight: 800, color: 'rgba(208,28,42,0.06)', position: 'absolute', top: '-8px', right: '8px', lineHeight: 1 }}>{p.num}</div>
+              <div key={i} style={{ background: '#F4F6F9', padding: '36px 28px', borderTop: '3px solid #D01C2A', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '72px', fontWeight: 800, color: 'rgba(208,28,42,0.08)', position: 'absolute', top: '-8px', right: '8px', lineHeight: 1 }}>{p.num}</div>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', color: '#D01C2A', marginBottom: '12px' }}>STEP {p.num}</div>
-                <h3 style={{ fontSize: '17px', color: '#fff', marginBottom: '14px', position: 'relative', lineHeight: 1.2 }}>{p.title}</h3>
-                <p style={{ fontSize: '13px', color: '#718096', lineHeight: 1.7, position: 'relative' }}>{p.desc}</p>
+                <h3 style={{ fontSize: '17px', color: '#1E2533', marginBottom: '14px', position: 'relative', lineHeight: 1.2 }}>{p.title}</h3>
+                <p style={{ fontSize: '13px', color: '#4A5568', lineHeight: 1.7, position: 'relative' }}>{p.desc}</p>
               </div>
             ))}
           </div>

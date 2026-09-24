@@ -21,8 +21,8 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--navy);
-  color: var(--white);
+  background: var(--off-white);
+  color: var(--navy);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 1.6;
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5 {
 }
 
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-track { background: var(--off-white); }
 ::-webkit-scrollbar-thumb { background: var(--red); }
 ::selection { background: var(--red); color: #fff; }
 

@@ -26,8 +26,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {/* 36px topbar + 70px navbar = 106px total */}
-        <main style={{ paddingTop: "106px" }}>
+        {/* 36px topbar + 84px navbar = 120px total */}
+        <main style={{ paddingTop: "120px" }}>
           {children}
         </main>
         <Footer />

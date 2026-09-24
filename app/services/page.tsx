@@ -55,7 +55,7 @@ export default function ServicesPage() {
       {/* Hero */}
       <section style={{ position: 'relative', height: '420px', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
         <Image src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1400&q=80" alt="Simba Homes Services" fill style={{ objectFit: 'cover' }} unoptimized />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.88)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.72)' }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: '#D01C2A' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 48px', width: '100%' }}>
           <div className="section-label" style={{ marginBottom: '12px' }}>What We Build</div>
@@ -73,7 +73,7 @@ export default function ServicesPage() {
 
       {/* Services */}
       {services.map((svc, i) => (
-        <section key={i} style={{ background: i % 2 === 0 ? '#1E2533' : '#252D3D', padding: '88px 48px' }}>
+        <section key={i} style={{ background: i % 2 === 0 ? '#FFFFFF' : '#F4F6F9', padding: '88px 48px' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '72px', alignItems: 'center', direction: i % 2 !== 0 ? 'rtl' : 'ltr' }}>
             <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden', direction: 'ltr' }}>
               <Image src={svc.img} alt={svc.title} fill style={{ objectFit: 'cover' }} unoptimized />
@@ -82,16 +82,16 @@ export default function ServicesPage() {
             </div>
             <div style={{ direction: 'ltr' }}>
               <div className="section-label" style={{ marginBottom: '10px' }}>Service {svc.num}</div>
-              <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', color: '#fff', marginBottom: '16px' }}>{svc.title.toUpperCase()}</h2>
-              <p style={{ fontSize: '15px', color: '#CBD5E0', lineHeight: 1.7, marginBottom: '16px' }}>{svc.short}</p>
-              <p style={{ fontSize: '14px', color: '#718096', lineHeight: 1.8, marginBottom: '28px' }}>{svc.desc}</p>
+              <h2 style={{ fontSize: 'clamp(26px, 3vw, 40px)', color: '#1E2533', marginBottom: '16px' }}>{svc.title.toUpperCase()}</h2>
+              <p style={{ fontSize: '15px', color: '#1E2533', lineHeight: 1.7, marginBottom: '16px' }}>{svc.short}</p>
+              <p style={{ fontSize: '14px', color: '#4A5568', lineHeight: 1.8, marginBottom: '28px' }}>{svc.desc}</p>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '28px' }}>
                 {svc.features.map(f => (
                   <div key={f} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                     <div style={{ width: '16px', height: '16px', background: '#D01C2A', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
                       <svg width="8" height="6" viewBox="0 0 8 6"><path d="M1 3l2 2L7 1" stroke="#fff" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     </div>
-                    <span style={{ fontSize: '13px', color: '#CBD5E0', lineHeight: 1.4 }}>{f}</span>
+                    <span style={{ fontSize: '13px', color: '#1E2533', lineHeight: 1.4 }}>{f}</span>
                   </div>
                 ))}
               </div>

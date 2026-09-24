@@ -36,7 +36,7 @@ export default function PermittingPage() {
       {/* Hero */}
       <section style={{ position: 'relative', height: '420px', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
         <Image src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=80" alt="Permitting & Zoning BC" fill style={{ objectFit: 'cover' }} unoptimized />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.92)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.72)' }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: '#D01C2A' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 48px', width: '100%' }}>
           <div className="section-label" style={{ marginBottom: '12px' }}>Permitting & Zoning</div>
@@ -55,22 +55,22 @@ export default function PermittingPage() {
       </section>
 
       {/* Intro */}
-      <section style={{ background: '#252D3D', padding: '80px 48px' }}>
+      <section style={{ background: '#F4F6F9', padding: '80px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '72px', alignItems: 'center' }}>
           <div>
             <div className="section-label" style={{ marginBottom: '12px' }}>The Biggest Risk In Home Building</div>
-            <h2 style={{ fontSize: 'clamp(24px, 3vw, 38px)', color: '#fff', marginBottom: '24px' }}>AVOIDING PERMITTING LIMBO</h2>
-            <p style={{ fontSize: '15px', color: '#CBD5E0', lineHeight: 1.8, marginBottom: '20px' }}>
+            <h2 style={{ fontSize: 'clamp(24px, 3vw, 38px)', color: '#1E2533', marginBottom: '24px' }}>AVOIDING PERMITTING LIMBO</h2>
+            <p style={{ fontSize: '15px', color: '#1E2533', lineHeight: 1.8, marginBottom: '20px' }}>
               One of the biggest risks in custom home building is <strong style={{ color: '#D01C2A' }}>"Permitting Limbo"</strong> — where projects stall for months due to paperwork errors or zoning misunderstandings.
             </p>
-            <p style={{ fontSize: '15px', color: '#718096', lineHeight: 1.8, marginBottom: '20px' }}>
+            <p style={{ fontSize: '15px', color: '#4A5568', lineHeight: 1.8, marginBottom: '20px' }}>
               At Simba Homes, we treat permitting as a dedicated phase of construction. We navigate the complex web of BC zoning bylaws, from density caps to environmental restrictions.
             </p>
-            <p style={{ fontSize: '15px', color: '#718096', lineHeight: 1.8, marginBottom: '32px' }}>
+            <p style={{ fontSize: '15px', color: '#4A5568', lineHeight: 1.8, marginBottom: '32px' }}>
               Our team prepares meticulous application packages that anticipate the city's questions before they ask them. Whether it's negotiating a variance or ensuring your energy calculations are spot-on, we hustle behind the scenes to get your permit approved faster.
             </p>
-            <div style={{ background: '#1E2533', padding: '20px 24px', borderLeft: '4px solid #D01C2A' }}>
-              <p style={{ fontSize: '15px', color: '#fff', fontStyle: 'italic', lineHeight: 1.7 }}>
+            <div style={{ background: '#FFFFFF', padding: '20px 24px', borderLeft: '4px solid #D01C2A' }}>
+              <p style={{ fontSize: '15px', color: '#1E2533', fontStyle: 'italic', lineHeight: 1.7 }}>
                 "Your job is to dream about the layout.<br />Our job is to get the stamp of approval."
               </p>
             </div>
@@ -83,22 +83,22 @@ export default function PermittingPage() {
       </section>
 
       {/* 4-Step Roadmap */}
-      <section style={{ background: '#1E2533', padding: '96px 48px' }}>
+      <section style={{ background: '#FFFFFF', padding: '96px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '64px' }}>
             <div className="section-label" style={{ marginBottom: '12px' }}>Our 4-Step Roadmap</div>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px' }}>FROM RED TAPE TO GREEN LIGHT</h2>
-            <p style={{ color: '#718096', fontSize: '15px', maxWidth: '540px', margin: '0 auto', lineHeight: 1.7 }}>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 52px)', color: '#1E2533', marginBottom: '16px' }}>FROM RED TAPE TO GREEN LIGHT</h2>
+            <p style={{ color: '#4A5568', fontSize: '15px', maxWidth: '540px', margin: '0 auto', lineHeight: 1.7 }}>
               We manage the permitting process proactively — so your build starts on time, every time.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2px' }}>
             {steps.map((s, i) => (
-              <div key={i} style={{ background: '#252D3D', padding: '40px 28px', borderTop: '3px solid #D01C2A', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '64px', fontWeight: 800, color: 'rgba(208,28,42,0.06)', position: 'absolute', top: '-8px', right: '8px', lineHeight: 1 }}>{s.num}</div>
+              <div key={i} style={{ background: '#F4F6F9', padding: '40px 28px', borderTop: '3px solid #D01C2A', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '64px', fontWeight: 800, color: 'rgba(208,28,42,0.08)', position: 'absolute', top: '-8px', right: '8px', lineHeight: 1 }}>{s.num}</div>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', color: '#D01C2A', marginBottom: '10px' }}>STEP {s.num}</div>
-                <h3 style={{ fontSize: '17px', color: '#fff', marginBottom: '14px', lineHeight: 1.2 }}>{s.title}</h3>
-                <p style={{ fontSize: '13px', color: '#718096', lineHeight: 1.7 }}>{s.desc}</p>
+                <h3 style={{ fontSize: '17px', color: '#1E2533', marginBottom: '14px', lineHeight: 1.2 }}>{s.title}</h3>
+                <p style={{ fontSize: '13px', color: '#4A5568', lineHeight: 1.7 }}>{s.desc}</p>
               </div>
             ))}
           </div>
@@ -106,32 +106,32 @@ export default function PermittingPage() {
       </section>
 
       {/* Problem / Solution */}
-      <section style={{ background: '#252D3D', padding: '96px 48px' }}>
+      <section style={{ background: '#F4F6F9', padding: '96px 48px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
             <div className="section-label" style={{ marginBottom: '12px' }}>Common Bottlenecks</div>
-            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#fff' }}>MASTERING THE MAZE</h2>
-            <p style={{ color: '#718096', fontSize: '15px', marginTop: '12px' }}>How Simba Homes prevents the most common permitting delays.</p>
+            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: '#1E2533' }}>MASTERING THE MAZE</h2>
+            <p style={{ color: '#4A5568', fontSize: '15px', marginTop: '12px' }}>How Simba Homes prevents the most common permitting delays.</p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
             {problems.map((p, i) => (
               <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-                <div style={{ padding: '28px 32px', background: '#1E2533', borderLeft: '3px solid rgba(208,28,42,0.5)', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                <div style={{ padding: '28px 32px', background: '#FFFFFF', borderLeft: '3px solid rgba(208,28,42,0.5)', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
                   <div style={{ width: '18px', height: '18px', flexShrink: 0, marginTop: '3px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 1l8 8M9 1L1 9" stroke="#D01C2A" strokeWidth="1.8" strokeLinecap="round"/></svg>
                   </div>
                   <div>
                     <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '9px', fontWeight: 700, letterSpacing: '0.2em', color: '#D01C2A', marginBottom: '6px', textTransform: 'uppercase' }}>The Problem</div>
-                    <p style={{ fontSize: '14px', color: '#CBD5E0', lineHeight: 1.6 }}>{p.problem}</p>
+                    <p style={{ fontSize: '14px', color: '#1E2533', lineHeight: 1.6 }}>{p.problem}</p>
                   </div>
                 </div>
-                <div style={{ padding: '28px 32px', background: '#252D3D', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                <div style={{ padding: '28px 32px', background: '#F4F6F9', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
                   <div style={{ width: '18px', height: '18px', flexShrink: 0, marginTop: '3px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4l3 3L9 1" stroke="#D01C2A" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </div>
                   <div>
                     <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '9px', fontWeight: 700, letterSpacing: '0.2em', color: '#D01C2A', marginBottom: '6px', textTransform: 'uppercase' }}>The Simba Solution</div>
-                    <p style={{ fontSize: '14px', color: '#718096', lineHeight: 1.6 }}>{p.solution}</p>
+                    <p style={{ fontSize: '14px', color: '#4A5568', lineHeight: 1.6 }}>{p.solution}</p>
                   </div>
                 </div>
               </div>

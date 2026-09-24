@@ -46,7 +46,7 @@ export default function HomePage() {
       <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0 }}>
           <Image src="/hero.png" alt="Luxury custom home BC" fill style={{ objectFit: 'cover', objectPosition: 'center' }} priority unoptimized />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(30,37,51,0.97) 0%, rgba(30,37,51,0.88) 50%, rgba(30,37,51,0.55) 100%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(30,37,51,0.88) 0%, rgba(30,37,51,0.72) 50%, rgba(30,37,51,0.35) 100%)' }} />
         </div>
         <div style={{ position: 'absolute', left: 0, top: '15%', bottom: '15%', width: '4px', background: '#D01C2A', zIndex: 2 }} />
 
@@ -92,12 +92,12 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES PREVIEW */}
-      <section ref={s1.ref} style={{ background: '#252D3D', padding: '100px 48px' }}>
+      <section ref={s1.ref} style={{ background: '#F4F6F9', padding: '100px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '56px', flexWrap: 'wrap', gap: '20px', opacity: s1.visible ? 1 : 0, transform: s1.visible ? 'none' : 'translateY(20px)', transition: 'all 0.7s ease' }}>
             <div>
               <div className="section-label" style={{ marginBottom: '10px' }}>Specialized Services</div>
-              <h2 style={{ fontSize: 'clamp(32px, 4vw, 52px)', color: '#fff' }}>WHAT WE BUILD</h2>
+              <h2 style={{ fontSize: 'clamp(32px, 4vw, 52px)', color: '#1E2533' }}>WHAT WE BUILD</h2>
             </div>
             <Link href="/services" style={{ color: '#D01C2A', fontFamily: 'Barlow Condensed, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '8px' }}>
               All Services
@@ -120,69 +120,30 @@ export default function HomePage() {
       </section>
 
       {/* OUR PROCESS */}
-      <section ref={s2.ref} style={{ background: '#1E2533', padding: '100px 48px' }}>
+      <section ref={s2.ref} style={{ background: '#FFFFFF', padding: '100px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '64px', opacity: s2.visible ? 1 : 0, transform: s2.visible ? 'none' : 'translateY(20px)', transition: 'all 0.7s ease' }}>
             <div className="section-label" style={{ marginBottom: '12px' }}>How We Work</div>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px' }}>FROM RED TAPE TO GREEN LIGHT</h2>
-            <p style={{ color: '#718096', fontSize: '15px', maxWidth: '560px', margin: '0 auto', lineHeight: 1.7 }}>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 52px)', color: '#1E2533', marginBottom: '16px' }}>FROM RED TAPE TO GREEN LIGHT</h2>
+            <p style={{ color: '#4A5568', fontSize: '15px', maxWidth: '560px', margin: '0 auto', lineHeight: 1.7 }}>
               We don't just submit plans and hope for the best — we manage the permitting process proactively so your build starts on time, every time.
             </p>
           </div>
           <div className="grid-4" style={{ display: 'grid', gap: '2px', opacity: s2.visible ? 1 : 0, transition: 'opacity 0.7s ease 0.3s' }}>
             {process.map((p, i) => (
-              <div key={i} style={{ background: '#252D3D', padding: '36px 28px', borderTop: '3px solid #D01C2A', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '72px', fontWeight: 800, color: 'rgba(208,28,42,0.06)', position: 'absolute', top: '-8px', right: '8px', lineHeight: 1 }}>{p.num}</div>
+              <div key={i} style={{ background: '#F4F6F9', padding: '36px 28px', borderTop: '3px solid #D01C2A', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '72px', fontWeight: 800, color: 'rgba(208,28,42,0.08)', position: 'absolute', top: '-8px', right: '8px', lineHeight: 1 }}>{p.num}</div>
                 <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', color: '#D01C2A', marginBottom: '12px' }}>STEP {p.num}</div>
-                <h3 style={{ fontSize: '18px', color: '#fff', marginBottom: '14px', position: 'relative', lineHeight: 1.2 }}>{p.title}</h3>
-                <p style={{ fontSize: '13px', color: '#718096', lineHeight: 1.7, position: 'relative' }}>{p.desc}</p>
+                <h3 style={{ fontSize: '18px', color: '#1E2533', marginBottom: '14px', position: 'relative', lineHeight: 1.2 }}>{p.title}</h3>
+                <p style={{ fontSize: '13px', color: '#4A5568', lineHeight: 1.7, position: 'relative' }}>{p.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CURRENT OFFERS */}
-      <section style={{ background: '#252D3D', padding: '100px 48px', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <div className="section-label" style={{ marginBottom: '12px' }}>Current Offers</div>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 52px)', color: '#fff', marginBottom: '16px' }}>LIMITED-TIME OFFERS</h2>
-            <p style={{ color: '#718096', fontSize: '15px', maxWidth: '560px', margin: '0 auto', lineHeight: 1.7 }}>
-              Take advantage of our current promotions — get in touch before they end.
-            </p>
-          </div>
-          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', maxWidth: '900px', margin: '0 auto' }}>
-            {[
-              { img: '/promo-zoning-report.jpeg', alt: 'Free Property Zoning Report' },
-              { img: '/promo-permit-completion.jpeg', alt: 'Guiding You From Permit to Completion' },
-              { img: '/promo-building-better-spaces.jpeg', alt: 'Building Better Spaces' },
-              { img: '/promo-foundation-pour.jpeg', alt: 'Let a Licensed Builder Pour Your Foundation' },
-              { img: '/promo-dream-home-bc.jpeg', alt: 'Your Dream Home in BC' },
-              { img: '/promo-ideal-living-space.jpeg', alt: 'Creating Your Ideal Living Space' },
-            ].map((o, i) => (
-              <Link
-                key={i}
-                href="/contact"
-                style={{ display: 'block', borderRadius: '10px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', position: 'relative', aspectRatio: '3 / 4', background: '#fff' }}
-              >
-                <Image src={o.img} alt={o.alt} fill style={{ objectFit: 'contain' }} unoptimized />
-              </Link>
-            ))}
-          </div>
-        </div>
-        <style jsx>{`
-          @media (max-width: 900px) {
-            .grid-2 { grid-template-columns: 1fr 1fr !important; }
-          }
-          @media (max-width: 560px) {
-            .grid-2 { grid-template-columns: 1fr !important; }
-          }
-        `}</style>
-      </section>
-
       {/* WHY SIMBA */}
-      <section ref={s3.ref} style={{ background: '#252D3D', padding: '100px 48px', overflow: 'hidden' }}>
+      <section ref={s3.ref} style={{ background: '#F4F6F9', padding: '100px 48px', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div className="grid-2" style={{ display: 'grid', gap: '80px', alignItems: 'center' }}>
             <div style={{ position: 'relative', opacity: s3.visible ? 1 : 0, transform: s3.visible ? 'none' : 'translateX(-30px)', transition: 'all 0.8s ease', maxWidth: '100%' }}>
@@ -199,11 +160,11 @@ export default function HomePage() {
 
             <div style={{ opacity: s3.visible ? 1 : 0, transform: s3.visible ? 'none' : 'translateX(30px)', transition: 'all 0.8s ease 0.2s' }}>
               <div className="section-label" style={{ marginBottom: '12px' }}>Why Simba Homes</div>
-              <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 46px)', color: '#fff', marginBottom: '24px' }}>PRECISION BUILDING FOR THE BC LIFESTYLE.</h2>
-              <p style={{ fontSize: '15px', color: '#718096', lineHeight: 1.8, marginBottom: '16px' }}>
+              <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 46px)', color: '#1E2533', marginBottom: '24px' }}>PRECISION BUILDING FOR THE BC LIFESTYLE.</h2>
+              <p style={{ fontSize: '15px', color: '#4A5568', lineHeight: 1.8, marginBottom: '16px' }}>
                 Simba Homes was established to set a new standard for residential construction in BC. In an industry often plagued by delays and budget overruns, we distinguish ourselves through meticulous planning and unwavering accountability.
               </p>
-              <p style={{ fontSize: '15px', color: '#718096', lineHeight: 1.8, marginBottom: '32px' }}>
+              <p style={{ fontSize: '15px', color: '#4A5568', lineHeight: 1.8, marginBottom: '32px' }}>
                 We specialize in high-performance homes designed to meet modern energy standards. Our team has deep knowledge of local zoning bylaws and permitting — solving potential issues before they ever reach the job site.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '40px' }}>
@@ -217,7 +178,7 @@ export default function HomePage() {
                     <div style={{ width: '20px', height: '20px', background: '#D01C2A', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
                       <svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4l3 3L9 1" stroke="#fff" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     </div>
-                    <span style={{ fontSize: '14px', color: '#CBD5E0', lineHeight: 1.5 }}>{item}</span>
+                    <span style={{ fontSize: '14px', color: '#1E2533', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -230,17 +191,17 @@ export default function HomePage() {
       {/* CTA BANNER */}
       <section ref={s4.ref} style={{ position: 'relative', padding: '80px 48px', overflow: 'hidden' }}>
         <Image src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80" alt="Start your project" fill style={{ objectFit: 'cover' }} unoptimized />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.92)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(244,246,249,0.93)' }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: '#D01C2A' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '32px', opacity: s4.visible ? 1 : 0, transform: s4.visible ? 'none' : 'translateY(20px)', transition: 'all 0.7s ease' }}>
           <div>
             <div className="section-label" style={{ marginBottom: '12px' }}>Ready to Start?</div>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff' }}>YOUR DREAM. OUR EXPERTISE.</h2>
-            <p style={{ fontSize: '15px', color: '#718096', marginTop: '8px' }}>Contact Parminder today — free project consultation.</p>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', color: '#1E2533' }}>YOUR DREAM. OUR EXPERTISE.</h2>
+            <p style={{ fontSize: '15px', color: '#4A5568', marginTop: '8px' }}>Contact Parminder today — free project consultation.</p>
           </div>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn-primary">Get Free Quote</Link>
-            <a href="tel:+17787077325" className="btn-outline">+1 778 707 7325</a>
+            <a href="tel:+17787077325" className="btn-outline" style={{ color: '#1E2533', borderColor: 'rgba(30,37,51,0.3)' }}>+1 778 707 7325</a>
           </div>
         </div>
       </section>

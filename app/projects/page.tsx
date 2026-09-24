@@ -55,7 +55,7 @@ export default function ProjectsPage() {
       {/* Hero */}
       <section style={{ position: 'relative', height: '420px', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
         <Image src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1400&q=80" alt="Our Projects" fill style={{ objectFit: 'cover' }} unoptimized />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.9)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,37,51,0.72)' }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: '#D01C2A' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 48px', width: '100%' }}>
           <div className="section-label" style={{ marginBottom: '12px' }}>Our Work</div>
@@ -82,13 +82,13 @@ export default function ProjectsPage() {
       </section>
 
       {/* Projects grid */}
-      <section style={{ background: '#1E2533', padding: '96px 48px' }}>
+      <section style={{ background: '#FFFFFF', padding: '96px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
             {projects.map(p => (
-              <div key={p.id} style={{ background: '#252D3D', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.06)', transition: 'border-color 0.3s' }}
+              <div key={p.id} style={{ background: '#F4F6F9', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.06)', transition: 'border-color 0.3s' }}
                 onMouseEnter={e => (e.currentTarget as HTMLElement).style.borderColor = 'rgba(208,28,42,0.4)'}
-                onMouseLeave={e => (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.06)'}
+                onMouseLeave={e => (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,0,0,0.06)'}
               >
                 {/* Image */}
                 <div style={{ position: 'relative', aspectRatio: '16/10', overflow: 'hidden' }}>
@@ -100,14 +100,14 @@ export default function ProjectsPage() {
                 {/* Info */}
                 <div style={{ padding: '24px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
-                    <h3 style={{ fontSize: '20px', color: '#fff', flex: 1 }}>{p.title}</h3>
+                    <h3 style={{ fontSize: '20px', color: '#1E2533', flex: 1 }}>{p.title}</h3>
                     <span style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '10px', color: '#4A5568', letterSpacing: '0.1em', marginLeft: '8px' }}>{p.id}</span>
                   </div>
                   <p style={{ fontSize: '12px', color: '#D01C2A', fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '12px' }}>{p.location}</p>
-                  <p style={{ fontSize: '13px', color: '#718096', lineHeight: 1.6, marginBottom: '16px' }}>{p.desc}</p>
+                  <p style={{ fontSize: '13px', color: '#4A5568', lineHeight: 1.6, marginBottom: '16px' }}>{p.desc}</p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                     {p.specs.map(s => (
-                      <span key={s} style={{ fontSize: '10px', padding: '4px 8px', background: '#1E2533', color: '#718096', border: '1px solid rgba(255,255,255,0.06)', fontFamily: 'Barlow Condensed, sans-serif', letterSpacing: '0.06em' }}>{s}</span>
+                      <span key={s} style={{ fontSize: '10px', padding: '4px 8px', background: '#FFFFFF', color: '#4A5568', border: '1px solid rgba(0,0,0,0.08)', fontFamily: 'Barlow Condensed, sans-serif', letterSpacing: '0.06em' }}>{s}</span>
                     ))}
                   </div>
                 </div>
