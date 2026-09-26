@@ -142,6 +142,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FREE ZONING REPORT */}
+      <section style={{ background: '#1E2533', padding: '90px 48px' }}>
+        <div className="grid-2" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gap: '64px', alignItems: 'center' }}>
+          <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden' }}>
+            <Image src="/img3.png" alt="Free property zoning report" fill style={{ objectFit: 'cover' }} unoptimized />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(208,28,42,0.18) 0%, transparent 55%)' }} />
+          </div>
+          <div>
+            <div className="section-label" style={{ marginBottom: '12px' }}>Free For Property Owners</div>
+            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 42px)', color: '#fff', marginBottom: '10px', lineHeight: 1.1 }}>FREE PROPERTY ZONING REPORT</h2>
+            <p style={{ fontSize: '16px', color: '#D01C2A', fontWeight: 600, marginBottom: '20px' }}>Find out how many units you can build.</p>
+            <p style={{ fontSize: '15px', color: '#CBD5E0', lineHeight: 1.8, marginBottom: '28px' }}>
+              If you own a building lot or residential property, we will create a free Property Zoning &amp; Density Analysis for your specific property — no strings attached.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '18px', marginBottom: '32px' }}>
+              {[
+                'A full planning & development breakdown — zoning, density and options for your property.',
+                'Special government grants and incentives that may be available to help fund your project.',
+                'A clear development opinion so you can pursue the most promising, profitable path forward.',
+              ].map((item, i) => (
+                <div key={i} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '22px', height: '22px', background: '#D01C2A', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
+                    <svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4l3 3L9 1" stroke="#fff" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </div>
+                  <span style={{ fontSize: '14px', color: '#CBD5E0', lineHeight: 1.6 }}>{item}</span>
+                </div>
+              ))}
+            </div>
+            <Link href="/contact" className="btn-primary">Get My Free Zoning Report</Link>
+          </div>
+        </div>
+      </section>
+
       {/* WHY SIMBA */}
       <section ref={s3.ref} style={{ background: '#F4F6F9', padding: '100px 48px', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -186,6 +219,47 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* COMPLETE PROJECT DELIVERY */}
+      <section style={{ background: '#FFFFFF', padding: '100px 48px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
+            <div className="section-label" style={{ marginBottom: '12px' }}>Start To Finish</div>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', color: '#1E2533', marginBottom: '16px' }}>COMPLETE PROJECT DELIVERY</h2>
+            <p style={{ color: '#4A5568', fontSize: '15px', maxWidth: '560px', margin: '0 auto', lineHeight: 1.7 }}>
+              From the foundation up to the finishing touches — we manage every stage of your project under one roof.
+            </p>
+          </div>
+          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+            {[
+              {
+                title: 'Foundation & Structural',
+                desc: 'A licensed builder pours every foundation — engineered footings, structural framing, and code-compliant work you can trust from day one.',
+                icon: <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" />,
+              },
+              {
+                title: 'Renovation & Additions',
+                desc: 'Flooring, siding, kitchens and complete home renovations — built with care, precision and professionalism, one project at a time.',
+                icon: <><path d="M3 9l9-6 9 6v11a1 1 0 01-1 1H4a1 1 0 01-1-1V9z" /><path d="M9 21V12h6v9" /></>,
+              },
+              {
+                title: 'Interior Design & Living Spaces',
+                desc: 'From concept to completion, we design and build custom interiors that fit your lifestyle — we manage every detail.',
+                icon: <><rect x="3" y="4" width="18" height="16" rx="1" /><path d="M3 10h18M9 10v10" /></>,
+              },
+            ].map((f, i) => (
+              <div key={i} style={{ background: '#F4F6F9', padding: '40px 32px', borderTop: '3px solid #D01C2A' }}>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D01C2A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '20px' }}>{f.icon}</svg>
+                <h3 style={{ fontSize: '18px', color: '#1E2533', marginBottom: '12px' }}>{f.title}</h3>
+                <p style={{ fontSize: '13px', color: '#4A5568', lineHeight: 1.7 }}>{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <style jsx>{`
+          @media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr !important; } }
+        `}</style>
       </section>
 
       {/* CTA BANNER */}

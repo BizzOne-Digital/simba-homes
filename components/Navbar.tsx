@@ -32,6 +32,7 @@ export default function Navbar() {
     <>
       {/* ── TOP CONTACT STRIP ── */}
       <div
+        className="topbar"
         style={{
           position: 'fixed',
           top: 0,
@@ -43,17 +44,19 @@ export default function Navbar() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'flex-end',
+          overflow: 'hidden',
           padding: '0 48px',
         }}
       >
         <a
           href="mailto:info@simbahomes.ca"
+          className="topbar-email"
           style={{
             display: 'flex', alignItems: 'center', gap: '6px',
             color: '#fff', textDecoration: 'none',
             fontFamily: 'Barlow Condensed, sans-serif',
             fontSize: '12px', fontWeight: 600, letterSpacing: '0.06em',
-            padding: '0 16px', height: '36px',
+            padding: '0 16px', height: '36px', whiteSpace: 'nowrap',
             borderRight: '1px solid rgba(255,255,255,0.25)',
           }}
         >
@@ -71,7 +74,7 @@ export default function Navbar() {
             color: '#fff', textDecoration: 'none',
             fontFamily: 'Barlow Condensed, sans-serif',
             fontSize: '12px', fontWeight: 600, letterSpacing: '0.06em',
-            padding: '0 16px', height: '36px',
+            padding: '0 16px', height: '36px', whiteSpace: 'nowrap',
           }}
         >
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -284,7 +287,7 @@ export default function Navbar() {
       )}
 
       <style jsx>{`
-        @media (max-width: 900px) {
+        @media (max-width: 1050px) {
           .nav-links {
             display: none !important;
           }
@@ -294,9 +297,31 @@ export default function Navbar() {
           }
         }
 
+        @media (max-width: 900px) {
+          .topbar {
+            padding: 0 24px !important;
+          }
+        }
+
+        @media (max-width: 700px) {
+          .topbar-email {
+            display: none !important;
+          }
+        }
+
         @media (max-width: 600px) {
           nav {
             padding: 0 20px !important;
+          }
+          .topbar {
+            padding: 0 20px !important;
+          }
+        }
+
+        @media (max-width: 380px) {
+          .topbar a {
+            font-size: 10px !important;
+            padding: 0 10px !important;
           }
         }
       `}</style>
