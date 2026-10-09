@@ -22,7 +22,7 @@ export default function WarrantyPage() {
           <div className="section-label" style={{ marginBottom: '12px' }}>Protection You Can Trust</div>
           <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', color: '#fff' }}>HOME WARRANTY COVERAGE</h1>
           <p style={{ color: '#718096', fontSize: '16px', marginTop: '12px', maxWidth: '560px' }}>
-            Every Simba Homes property is registered with WBI and BC Housing under BC's mandatory 2-5-10 year new home warranty program.
+            Every Simba Homes property is registered with BC Housing under BC's mandatory 2-5-10 year new home warranty program.
           </p>
           <div style={{ display: 'flex', gap: '8px', marginTop: '16px' }}>
             <Link href="/" style={{ fontSize: '13px', color: '#718096' }}>Home</Link>
@@ -73,7 +73,7 @@ export default function WarrantyPage() {
           {[
             { q: 'Is the warranty transferable if I sell my home?', a: 'Yes. The 2-5-10 warranty is tied to the property, not the original buyer. Coverage transfers to the new owner automatically — a major selling advantage.' },
             { q: 'How do I verify Simba Homes is a registered builder?', a: 'You can verify our BC Housing registration directly on the BC Housing website under the Licensed Residential Builder lookup.' },
-            { q: 'What happens if I find a defect after I move in?', a: 'Contact us immediately. We will coordinate with WBI or BC Housing to ensure the defect is properly addressed. Document everything with photos and dates.' },
+            { q: 'What happens if I find a defect after I move in?', a: 'Contact us immediately. We will coordinate with BC Housing to ensure the defect is properly addressed. Document everything with photos and dates.' },
             { q: 'Does the warranty cover renovations?', a: 'The 2-5-10 warranty applies to new home construction. Renovation work is covered under separate contractor warranties.' },
           ].map((faq, i) => (
             <div key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.08)', paddingBottom: '28px', marginBottom: '28px' }}>

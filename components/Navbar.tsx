@@ -9,7 +9,6 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
-  { href: '/projects', label: 'Projects' },
   { href: '/warranty', label: 'Warranty' },
   { href: '/permitting', label: 'Permitting' },
   { href: '/contact', label: 'Contact' },
@@ -285,6 +284,30 @@ export default function Navbar() {
           </Link>
         </div>
       )}
+
+      {/* WhatsApp floating button */}
+      <a
+        href="https://wa.me/17787077325"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        style={{
+          position: 'fixed',
+          right: '24px',
+          bottom: '24px',
+          zIndex: 1002,
+          width: '56px',
+          height: '56px',
+          borderRadius: '50%',
+          background: '#25D366',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
+        }}
+      >
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.33 5.02L2 22l5.12-1.34A9.96 9.96 0 0012.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.2c-1.6 0-3.17-.43-4.54-1.24l-.33-.19-3.04.8.81-2.96-.21-.3a8.17 8.17 0 01-1.26-4.31c0-4.53 3.69-8.22 8.22-8.22a8.17 8.17 0 018.22 8.22c0 4.53-3.69 8.2-8.22 8.2zm4.5-6.14c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.17.25-.64.8-.78.96-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.84-.86 2.06s.88 2.4 1 2.57c.12.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.2-.57.2-1.07.14-1.17-.06-.1-.23-.17-.48-.29z"/></svg>
+      </a>
 
       <style jsx>{`
         @media (max-width: 1050px) {

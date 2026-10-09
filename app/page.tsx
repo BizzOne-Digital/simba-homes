@@ -53,7 +53,6 @@ export default function HomePage() {
         <div style={{ position: 'relative', zIndex: 2, width: '100%', padding: '0 48px 0 64px' }}>
           <div style={{ maxWidth: '700px', animation: 'fadeUp 0.9s ease 0.1s both' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-              <div style={{ width: '40px', height: '2px', background: '#D01C2A' }} />
               <span className="section-label">Lower Mainland British Columbia · British Columbia</span>
             </div>
 
@@ -61,11 +60,11 @@ export default function HomePage() {
               WE DON'T JUST
             </h1>
             <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '28px', color: '#D01C2A', textTransform: 'uppercase', lineHeight: 1.05 }}>
-              BUILD HOMES.
+              BUILD HOMES
             </h1>
 
             <p style={{ fontSize: '17px', color: '#CBD5E0', lineHeight: 1.8, maxWidth: '540px', marginBottom: '40px', fontWeight: 300 }}>
-              End-to-end custom home construction engineered with milestone-driven timelines and total budget transparency across Lower Mainland British Columbia — backed by WBI &amp; BC Housing 2-5-10 Warranty.
+              End-to-end custom home construction, delivered with milestone-driven timelines and complete budget transparency across the Lower Mainland, British Columbia — licensed builder registered with BC Housing, backed by the 2-5-10 Warranty on all new homes.
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '64px' }}>
@@ -205,7 +204,7 @@ export default function HomePage() {
                   'Milestone-driven timelines — no surprise delays',
                   'Transparent, milestone-driven budgeting — no surprise change orders',
                   'Deep zoning & BC Building Code expertise',
-                  'WBI & BC Housing 2-5-10 Warranty on all new homes',
+                  'BC Housing 2-5-10 Warranty on all new homes',
                 ].map(item => (
                   <div key={item} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
                     <div style={{ width: '20px', height: '20px', background: '#D01C2A', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>

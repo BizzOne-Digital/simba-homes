@@ -13,8 +13,8 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
               <Image src="/logo1.png" alt="Simba Homes" width={60} height={60} style={{ objectFit: 'contain' }} />
               <div>
-                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '18px', fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#1E2533' }}>SIMBA HOMES LTD</div>
-                <div style={{ fontSize: '10px', color: '#D01C2A', letterSpacing: '0.2em', fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600 }}>Lower Mainland British Columbia</div>
+                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '24px', fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#1E2533' }}>SIMBA HOMES LTD</div>
+                <div style={{ fontSize: '11px', color: '#D01C2A', letterSpacing: '0.18em', fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600 }}>Lower Mainland British Columbia</div>
               </div>
             </div>
 
@@ -22,18 +22,14 @@ export default function Footer() {
             <div style={{ marginBottom: '20px' }}>
               <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4A5568', marginBottom: '12px' }}>Warranty Protected By</div>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
-                {/* WBI Logo badge */}
-                <div style={{ background: '#fff', padding: '8px 14px', display: 'flex', alignItems: 'center' }}>
-                  <Image src="/wbihomewarranty.png" alt="WBI Home Warranty" width={130} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} unoptimized />
-                </div>
                 {/* BC Housing Logo badge */}
-                <div style={{ background: '#fff', padding: '8px 14px', display: 'flex', alignItems: 'center' }}>
+                <div style={{ background: '#fff', border: '1px solid rgba(0,0,0,0.08)', padding: '8px 14px', display: 'flex', alignItems: 'center' }}>
                   <Image src="/bchousing.png" alt="BC Housing Registered Builder" width={130} height={40} style={{ objectFit: 'contain', height: '28px', width: 'auto' }} unoptimized />
                 </div>
                 {/* 2-5-10 badge */}
-                <div style={{ background: '#1E2533', border: '1px solid rgba(208,28,42,0.4)', padding: '8px 14px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <div style={{ background: '#fff', border: '1px solid rgba(0,0,0,0.08)', padding: '8px 14px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                   <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '14px', fontWeight: 800, color: '#D01C2A', lineHeight: 1 }}>2·5·10</div>
-                  <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '7px', color: '#718096', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: '1px' }}>YEAR WARRANTY</div>
+                  <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '7px', color: '#4A5568', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: '1px' }}>YEAR WARRANTY</div>
                 </div>
               </div>
             </div>
@@ -59,7 +55,7 @@ export default function Footer() {
           {/* Company */}
           <div>
             <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#1E2533', marginBottom: '20px', borderBottom: '1px solid rgba(0,0,0,0.08)', paddingBottom: '8px' }}>Company</div>
-            {[['About Us', '/about'], ['Our Projects', '/projects'], ['Warranty', '/warranty'], ['Contact', '/contact']].map(([l, h]) => (
+            {[['About Us', '/about'], ['Warranty', '/warranty'], ['Contact', '/contact']].map(([l, h]) => (
               <Link key={l} href={h} style={{ display: 'block', fontSize: '13px', color: '#4A5568', marginBottom: '10px', transition: 'color 0.2s' }}
                 onMouseEnter={e => e.currentTarget.style.color = '#D01C2A'}
                 onMouseLeave={e => e.currentTarget.style.color = '#4A5568'}

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Simba Homes Ltd",
   },
   description:
-    "Premium custom home builders, land development & renovation specialists in British Columbia. WBI & BC Housing 2-5-10 Warranty protected.",
+    "Premium custom home builders, land development & renovation specialists in British Columbia. BC Housing 2-5-10 Warranty protected.",
   icons: {
     icon: "/logo1.png",
     shortcut: "/logo1.png",
