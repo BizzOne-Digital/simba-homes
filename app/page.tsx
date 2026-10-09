@@ -56,15 +56,15 @@ export default function HomePage() {
               <span className="section-label">Lower Mainland British Columbia · British Columbia</span>
             </div>
 
-            <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '8px', color: '#fff', textTransform: 'uppercase', lineHeight: 1.05 }}>
+            <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '8px', color: '#fff', textTransform: 'uppercase', lineHeight: 1.05 }}>
               WE DON'T JUST
             </h1>
-            <h1 style={{ fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '28px', color: '#D01C2A', textTransform: 'uppercase', lineHeight: 1.05 }}>
+            <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 'clamp(42px, 6.5vw, 82px)', marginBottom: '28px', color: '#D01C2A', textTransform: 'uppercase', lineHeight: 1.05 }}>
               BUILD HOMES
             </h1>
 
             <p style={{ fontSize: '17px', color: '#CBD5E0', lineHeight: 1.8, maxWidth: '540px', marginBottom: '40px', fontWeight: 300 }}>
-              End-to-end custom home construction, delivered with milestone-driven timelines and complete budget transparency across the Lower Mainland, British Columbia — licensed builder registered with BC Housing, backed by the 2-5-10 Warranty on all new homes.
+              End-to-end custom home construction, delivered with milestone-driven timelines and complete budget transparency across the Lower Mainland, British Columbia — licensed builder registered with BC Housing, backed by the 2-5-10 Warranty on all new homes
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '64px' }}>
@@ -270,7 +270,7 @@ export default function HomePage() {
           <div>
             <div className="section-label" style={{ marginBottom: '12px' }}>Ready to Start?</div>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', color: '#1E2533' }}>YOUR DREAM. OUR EXPERTISE.</h2>
-            <p style={{ fontSize: '15px', color: '#4A5568', marginTop: '8px' }}>Contact Parminder today — free project consultation.</p>
+            <p style={{ fontSize: '15px', color: '#4A5568', marginTop: '8px' }}>Contact us today — free project consultation.</p>
           </div>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn-primary">Get Free Quote</Link>

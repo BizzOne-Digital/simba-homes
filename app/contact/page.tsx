@@ -86,7 +86,7 @@ export default function ContactPage() {
           <div>
             <div className="section-label" style={{ marginBottom: '12px' }}>Direct Contact</div>
             <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', color: '#1E2533', marginBottom: '24px' }}>REACH US DIRECTLY</h2>
-            <p style={{ fontSize: '14px', color: '#4A5568', lineHeight: 1.8, marginBottom: '36px' }}>Prefer to talk? Contact Parminder directly via phone or email.</p>
+            <p style={{ fontSize: '14px', color: '#4A5568', lineHeight: 1.8, marginBottom: '36px' }}>Prefer to talk? Contact us directly via phone or email.</p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '36px' }}>
               <a href="mailto:info@simbahomes.ca" style={{ display: 'flex', gap: '14px', alignItems: 'center', background: '#FFFFFF', padding: '18px 20px', borderLeft: '3px solid #D01C2A', textDecoration: 'none' }}>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   <svg width="32" height="24" viewBox="0 0 32 24"><path d="M2 12l8 8L30 2" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <h3 style={{ fontSize: '28px', color: '#1E2533', marginBottom: '12px' }}>PROJECT SUBMITTED!</h3>
-                <p style={{ color: '#4A5568', fontSize: '15px', lineHeight: 1.7, marginBottom: '8px' }}>Thank you, <strong style={{ color: '#1E2533' }}>{form.name}</strong>. Parminder will contact you within 24 business hours.</p>
+                <p style={{ color: '#4A5568', fontSize: '15px', lineHeight: 1.7, marginBottom: '8px' }}>Thank you, <strong style={{ color: '#1E2533' }}>{form.name}</strong>. Our team will contact you within 24 business hours.</p>
                 <p style={{ color: '#4A5568', fontSize: '13px' }}>Service: {form.service} &nbsp;·&nbsp; Budget: {form.budget}</p>
               </div>
             ) : (

@@ -104,7 +104,7 @@ export default function ServicesPage() {
       {/* CTA */}
       <section style={{ background: '#D01C2A', padding: '72px 48px', textAlign: 'center' }}>
         <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', color: '#fff', marginBottom: '16px' }}>NOT SURE WHERE TO START?</h2>
-        <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '32px', fontSize: '16px' }}>Contact Parminder for a free consultation and we will guide you to the right solution for your project.</p>
+        <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '32px', fontSize: '16px' }}>Contact us for a free consultation and we will guide you to the right solution for your project.</p>
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link href="/contact" style={{ background: '#fff', color: '#D01C2A', padding: '14px 40px', fontFamily: 'Barlow Condensed, sans-serif', fontSize: '14px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', display: 'inline-block' }}>Get Free Quote</Link>
           <a href="tel:+17787077325" style={{ background: 'transparent', color: '#fff', padding: '14px 40px', fontFamily: 'Barlow Condensed, sans-serif', fontSize: '14px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', display: 'inline-block', border: '2px solid rgba(255,255,255,0.4)' }}>+1 778 707 7325</a>

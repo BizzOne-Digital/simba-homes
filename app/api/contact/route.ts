@@ -76,7 +76,7 @@ export async function POST(req: NextRequest) {
               <p style="margin: 0; color: #1E2533; font-size: 14px;"><strong>Service:</strong> ${service || '—'}</p>
               ${budget ? `<p style="margin: 4px 0 0; color: #1E2533; font-size: 14px;"><strong>Budget:</strong> ${budget}</p>` : ''}
             </div>
-            <p style="color: #718096; font-size: 13px; margin: 0;">— Parminder &amp; the Simba Homes Team</p>
+            <p style="color: #718096; font-size: 13px; margin: 0;">— The Simba Homes Team</p>
           </div>
           <div style="background: #1E2533; padding: 16px 40px; text-align: center;">
             <p style="margin: 0 0 4px; color: #4A5568; font-size: 11px;">info@simbahomes.ca · +1 778 707 7325</p>
