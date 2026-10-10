@@ -26,6 +26,10 @@ export default function Footer() {
                 <div style={{ background: '#fff', border: '1px solid rgba(0,0,0,0.08)', padding: '8px 14px', display: 'flex', alignItems: 'center' }}>
                   <Image src="/bchousing.png" alt="BC Housing Registered Builder" width={130} height={40} style={{ objectFit: 'contain', height: '28px', width: 'auto' }} unoptimized />
                 </div>
+                {/* WBI Logo badge */}
+                <div style={{ background: '#fff', border: '1px solid rgba(0,0,0,0.08)', padding: '8px 14px', display: 'flex', alignItems: 'center' }}>
+                  <Image src="/wbihomewarranty.png" alt="WBI Home Warranty" width={130} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} unoptimized />
+                </div>
                 {/* 2-5-10 badge */}
                 <div style={{ background: '#fff', border: '1px solid rgba(0,0,0,0.08)', padding: '8px 14px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                   <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '14px', fontWeight: 800, color: '#D01C2A', lineHeight: 1 }}>2·5·10</div>
